@@ -1,0 +1,9 @@
+p.date {
+    color:#ccc;
+    font-family: georgia, serif;
+    font-size: 12px;
+    font-style: italic;
+}
+.comment {
+    padding:10px;
+}

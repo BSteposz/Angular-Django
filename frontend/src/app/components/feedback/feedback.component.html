@@ -1,0 +1,19 @@
+
+<hr>
+<tr *ngFor="let feedback of feedback">
+  <td >
+    <p class="date">
+      Added {{feedback.created}}
+    </p>
+    <h3>{{feedback.name}}</h3>
+    <p class="comment">{{feedback.feedback}}</p>
+    <hr>
+  </td>
+</tr>
+
+<br><br><br>
+<hr>
+
+Name <input type="text" [(ngModel)]="feedbacks.name"/><br><br>
+Feedback <input type="text" [(ngModel)]="feedbacks.feedback"/><br><br>
+<button (click)="createFeedback()" >POST</button>

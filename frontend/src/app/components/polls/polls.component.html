@@ -1,0 +1,11 @@
+<ul>
+    <li *ngFor="let question of questions">
+    {{question.question}}
+    <ul>
+        <li *ngFor="let choice of choices">
+        <input type="checkbox" (click)="vote(choice)"> {{choice.choice}}
+        </li>
+    </ul>
+    </li>
+  <button (click)="vote(choice)"> Vote</button>
+</ul>
